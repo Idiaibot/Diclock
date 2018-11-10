@@ -27,6 +27,7 @@
     width: 100vw;
     height: 100vh;
 
+
 }
   </style>
 </head>
@@ -110,12 +111,12 @@
     hour=hour%12;
     hour=(hour*Math.PI/6)+(minute*Math.PI/(6*60))+(second*Math.PI/(360*60));
     rotatepicture("kasi", hour, radius*0.5, radius*0.07);
-    console.log(hour, "tunti");
+    
 
     //minute
     minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
     rotatepicture("minuut", minute, radius*0.8, radius*0.07);
-    console.log(minute, "minuutti");
+
 
     // second
     second=(second*Math.PI/30);
@@ -129,7 +130,7 @@
     var hand = document.getElementById(kuva);
     hand.style.transform = "rotate("+ testi +"deg)"
     hand.style["transform-origin"] = "center"
-    console.log(testi);
+
   }
 
   </script>

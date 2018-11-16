@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129282742-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129282742-1');
+</script>
+
   <style>
   .paallekkain{
     position: absolute;
@@ -111,7 +121,7 @@
     hour=hour%12;
     hour=(hour*Math.PI/6)+(minute*Math.PI/(6*60))+(second*Math.PI/(360*60));
     rotatepicture("kasi", hour, radius*0.5, radius*0.07);
-    
+
 
     //minute
     minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
